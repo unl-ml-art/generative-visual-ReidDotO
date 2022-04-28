@@ -1,11 +1,10 @@
 # Project 3 Generative Visual
 
-Your Name, yourcontact@unl.edu
-(Your teammate's contact info, if appropriate)
+Reid Brockmeier, rbrockmeier2@unl.edu
 
 ## Abstract
 
-Include your abstract here. This should be one paragraph clearly describing your concept, method, and results. This should tell us what architecture/approach you used. Also describe your creative goals, and whether you were successful in achieving them. Also could describe future directions.
+For this project, I want to use a GAN to generate pokemon, and use the generated images to create a custom ROM Hack of Pokemon with those as the sprites. Ideally, I would like to repplace every Pokemon in one game, but I am not sure if that is possible within the time restraints. As far as the method for generating, I am not entirely sure, but I believe there is a way to train/refine a GAN on your own images. If it is possible, I would like to use all the Pokemon to train it on. If not, I am sure that style transfer could work as well. An alternative project could be generating thumbnails for YouTube, but I do not think that would be all that interesting.
 
 ## Model/Data
 
