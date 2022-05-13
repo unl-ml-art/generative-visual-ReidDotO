@@ -9,7 +9,8 @@ For this project, I want to use a GAN to generate pokemon, and use the generated
 ## Model/Data
 
 Briefly describe the files that are included with your repository:
-- trained models
+- Pokemon Data
+  - [GPT-2 Notebook](/Pokemon Data/gpt2-generate-finetune.ipynb)
 - training data (or link to training data)
 
 ## Code
