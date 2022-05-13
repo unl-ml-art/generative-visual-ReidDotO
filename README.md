@@ -8,33 +8,65 @@ For this project, I want to use a GAN to generate pokemon, and use the generated
 
 ## Model/Data
 
-Briefly describe the files that are included with your repository:
 - Pokemon Data
-  - [GPT-2 Notebook](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/gpt2-generate-finetune.ipynb)
-- training data (or link to training data)
+  - [Training Data](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/pokemon%20(1).txt) (data of all existing Pokemon)
 
 ## Code
 
-Your code for generating your project:
-- Python: generative_code.py
-- Jupyter notebooks: generative_code.ipynb
+- Pokemon Data Generation
+  - [GPT-2 Notebook](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/gpt2-generate-finetune.ipynb)
+- Pokemon Sprites Generation
+  - [Collab Notebook from Max Woolf](https://colab.research.google.com/drive/1A3t2gQofQGeXo5z1BAr1zqYaqVg3czKd?usp=sharing)
 
 ## Results
 
-Documentation of your results in an appropriate format, both links to files and a brief description of their contents:
-- image files (`.jpg`, `.png` or whatever else is appropriate)
-- move files (uploaded to youtube or vimeo due to github file size limits)
-- ... some other form
+GAME IS NOT INCLUDED HERE. If you want to play the game, see Technical Notes below.
+
+- [Generated Pokemon Sprites](https://drive.google.com/drive/folders/1j32kMClGtk_8aHEY-FDXFY4Y1dxdqFOg?usp=sharing)
+
+![00342](https://user-images.githubusercontent.com/83422507/168212248-604d1cf5-93f0-459d-a2b7-44252061a7b1.png)
+![00564](https://user-images.githubusercontent.com/83422507/168212266-6484e0df-f25f-4bfb-9b75-bfe35ace6101.png)
+![00778](https://user-images.githubusercontent.com/83422507/168212496-5da62ffd-aaeb-4c47-9673-e7c9169e9c10.png)
+
+- Generated Pokemon Data
+  - [1](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/generated_pokemon%20(1).txt), [2](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/generated_pokemon2%20(1).txt), [3](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/generated_pokemon3%20(1).txt), [4](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/generated_pokemon4%20(1).txt), [5](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/generated_pokemon5%20(1).txt), [6](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/generated_pokemon6%20(1).txt)
+
+- In-Game Images
+![Screenshot 2022-05-12 234927](https://user-images.githubusercontent.com/83422507/168213356-875a961e-f030-41df-a4ea-57775ff55a8b.png)
+![Screenshot 2022-05-12 235541](https://user-images.githubusercontent.com/83422507/168213835-5f056db3-cda6-4f82-aaf2-1ee305bea87c.png)
+
+
+- Video Documentation to come
 
 ## Technical Notes
 
-Any implementation details or notes we need to repeat your work. 
-- Does this code require other pip packages, software, etc?
-- Does it run on some other (non-datahub) platform? (CoLab, etc.)
+TO PLAY THIS ROM YOU MUST RECREATE IT:
+1. Obtain a ROM of Pokemon FireRed (no I will not explain how to do this)
+2. Download [Pokemon Game Editor](https://github.com/Gamer2020/PokemonGameEditor/releases)
+3. Launch PGE and open your ROM
+4. Select "Pokemon Editor"
+5. Import All Pokemon- use [Game Files.zip - Pokemon](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Game%20Files.zip)
+6. Import All Sprite Sheets- use [Game Files.zip - Sprites](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Game%20Files.zip)
+7. Play on an Emulator of your choice
 
-## Reference
+TO MAKE YOUR OWN POKEMON (this takes way too long, so I do not suggest doing it):
+1. Generate Pokemon sprites using [Collab Notebook from Max Woolf](https://colab.research.google.com/drive/1A3t2gQofQGeXo5z1BAr1zqYaqVg3czKd?usp=sharing)
+2. Generate Pokemon data using [GPT-2 Notebook](https://github.com/unl-ml-art/generative-visual-ReidDotO/blob/master/Pokemon%20Data/gpt2-generate-finetune.ipynb)
+3. Use [Pokemon Game Editor](https://github.com/Gamer2020/PokemonGameEditor/releases) to manually enter names, stats and other Pokemon data
+4. Using your generated Pokemon sprites, you must do some work in photoshop to index them and use the correct format.
+   1. Export the first sprite sheet and use this as a template.
+   2. Cut your generated pokemon out of the background and place them in the spots of the existing Pokemon.
+   3. Take some liberties for the back sprites as they are not generated.
+   4. Make a background layer that is a color that does not appear in the sprite itself.
+   5. Go to Image, Mode, and select Indexed Color.
+   6. Change the colors to a custom profile and use 16 or less colors.
+   7. Make sure that the first indexed color is your background color.
+   8. Save as a png with the smallest file size.
+   9. Import A-series Sprite sheet in PGE.
 
-References to any papers, techniques, repositories you used:
-- Papers
-- Repositories
-- Blog posts
+
+
+## References
+
+- [Sprite replacing](https://www.pokecommunity.com/showthread.php?t=208837) (I did not use this because it was far more difficule, but it did help with indexing the images)
+- [Max Woolf's Pokemon Generation](https://github.com/minimaxir/ai-generated-pokemon-rudalle)
