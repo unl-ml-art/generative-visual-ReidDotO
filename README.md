@@ -1,6 +1,7 @@
 # AI Generated Pokemon Game - Project 3 Generative Visual 
 Result Video: [I used DALL-E to replace EVERY Pokémon in FireRed...](https://www.youtube.com/watch?v=_ookedqwrW8)
-[UNL Machine Learning for the Arts](https://github.com/unl-ml-art) 2022 with [Robert Twomey](https://roberttwomey.com/)
+[UNL Machine Learning for the Arts](https://github.com/unl-ml-art) 
+2022 with [Robert Twomey](https://roberttwomey.com/)
 
 Reid Brockmeier, rbrockmeier2@unl.edu
 
